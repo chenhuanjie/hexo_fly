@@ -83,7 +83,9 @@ jar 已签名。
 
 # 使用AXMLEditor修改AndroidManifest
 
-但是某些apk反编译破解后无法成功回编译, 于是有了这样一个工具, 可以直接修改二进制文件, 无需繁琐的反编译、回编译过程, 厉害得很.
+<font color=red>如果反编译+回编译可以搞定问题是最好的, 不行的话再试下面这个方法, 因为个人感觉可能有坑, 文章末尾会说为什么. </font>
+
+而某些apk反编译破解后无法成功回编译, 于是有了这样一个工具, 可以直接修改二进制文件, 无需繁琐的反编译、回编译过程, 厉害得很.
 
 ### 1. 装个AXMLEditor先
 
@@ -139,6 +141,22 @@ jarsigner -verbose -keystore test.keystore -signedjar result.apk com.hello_new.a
 到这里就算搞定了, 这个result.apk就已经是debuggable的了. 可以尝试下adb install, 如果签名有问题的话会安装失败的.
 
 <font color="#EEE">撒, 开始快乐的截帧吧. </font>
+
+----
+
+### 坑?
+
+咱尝试了两种方法, 发现后者输出的apk并不能正常debug, 于是用aapt查看包体的各项属性, 发现:
+
+```log
+> ./aapt list -v -a result_OK.apk | grep debuggable
+    A: android:debuggable(0x0101000f)=(type 0x12)0xffffffff
+> ./aapt list -v -a result_GG.apk | grep debuggable
+    A: android:debuggable=(type 0x12)0x1 (Raw: "true")
+```
+
+emmmm, 用力过猛塞进去一个raw string? 具体原理探究起来可能时间开销比较大, 于是我就放弃了, 还好有一个方法可以用.
+害, 当然也可能是我使用方法出错了, 常有的事儿, 如果有知情的朋友欢迎批评, 感谢指教!
 
 ---
 
