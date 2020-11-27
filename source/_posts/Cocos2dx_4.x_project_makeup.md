@@ -8,6 +8,22 @@ Cocos2dx从4.0版本开始改用cmake, 删掉了原有的各个平台的工程�
 
 ----
 
+### <font color=red>20201127更新:</font>
+
+实际上[官方教程](https://docs.cocos.com/cocos2d-x/manual/zh/installation/)有留方法, 就是用创建工程的那个脚本, 使用方法:
+
+```shell
+mkdir build
+cd build
+cocos run --proj-dir .. -p [mac|win32|android|linux|ios]
+```
+
+其实就是直接跑cocos run, 指定下项目路径, 指定下platform. 注意-p的值不可以是windows.
+
+此外不论如何挣扎, 添加新的代码文件或者资源文件之后都需要重新运行一下, 这很蛋疼.
+
+----
+
 # Windows上构建Visual Studio项目
 
 先创建个目录用来装项目工程(powershell)
@@ -19,7 +35,7 @@ mkdir win32-build && cd win32-build;
 然后用cmake进行构建
 
 ```shell
-cmake .. -G "Visual Studio 16 2019" -Tv141 -A win32 ..
+cmake .. -G "Visual Studio 16 2019" -Tv141 -A win32
 ```
 
 上面这个命令的-G参数要看咱用的是什么IDE, 比如: (8之前的官方文档上写着removed, 可能是不支持了)
