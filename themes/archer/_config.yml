@@ -30,8 +30,8 @@ social:
   rss: 
 # friends
 friends:
-  小马哥: //120.27.147.205
-  强哥: //www.huwenqiang.cn
+  小马哥: http://120.27.147.205
+  强哥: https://www.huwenqiang.cn
   # friendC: 
 about:
   enable: true
