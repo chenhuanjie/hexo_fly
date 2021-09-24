@@ -7,7 +7,7 @@
 # subtitle:  
 # description:  
 # keywords:
-# author: 陈焕杰
+author: 陈焕杰
 language: zh-cn
 timezone: 'Asia/Shanghai'
 
@@ -52,7 +52,7 @@ highlight:
   wrap: true
   hljs: false
 prismjs:
-  enable: false
+  enable: true
   preprocess: true
   line_number: true
   tab_replace: ''
