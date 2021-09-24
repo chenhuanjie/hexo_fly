@@ -9,10 +9,9 @@
     "server": "hexo server"
   },
   "hexo": {
-    "version": "5.2.0"
+    "version": "5.4.0"
   },
   "dependencies": {
-    "hexo": "^5.0.0",
     "hexo-asset-image": "github:CodeFalling/hexo-asset-image",
     "hexo-deployer-git": "^2.1.0",
     "hexo-generator-archive": "^1.0.0",
@@ -26,5 +25,8 @@
     "hexo-renderer-stylus": "^2.0.0",
     "hexo-server": "^2.0.0",
     "hexo-wordcount": "^6.0.1"
+  },
+  "devDependencies": {
+    "hexo": "^5.4.0"
   }
 }
