@@ -258,9 +258,9 @@
     "utils-merge" "1.0.1"
 
 "core-util-is@~1.0.0":
-  "integrity" "sha1-tf1UIgqivFq1eqtxQMlAdUUDwac="
-  "resolved" "https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.2.tgz"
-  "version" "1.0.2"
+  "integrity" "sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ=="
+  "resolved" "https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.3.tgz"
+  "version" "1.0.3"
 
 "cross-spawn@^7.0.0":
   "integrity" "sha1-9zqFudXUHQRVUcF34ogtSshXKKY="
@@ -577,10 +577,9 @@
   dependencies:
     "function-bind" "^1.1.1"
 
-"hexo-asset-image@^1.0.0":
-  "integrity" "sha512-jkuUJNPRMH6v7HqzP2BAwEZavMzVxNWhl8jZl9BmFYB22/aq2+zixGIhV4vedI9cLPydjn9DfII41/MMXtzJTA=="
-  "resolved" "https://registry.npmjs.org/hexo-asset-image/-/hexo-asset-image-1.0.0.tgz"
-  "version" "1.0.0"
+"hexo-asset-image@github:CodeFalling/hexo-asset-image":
+  "resolved" "git+ssh://git@github.com/CodeFalling/hexo-asset-image.git#3c114cf0c0343ab28469635085b225fcae7fb9d3"
+  "version" "0.0.5"
   dependencies:
     "cheerio" "^0.19.0"
     "entities" "^1.1.2"
