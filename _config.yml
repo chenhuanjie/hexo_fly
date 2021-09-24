@@ -3,19 +3,19 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 短尾猫集散地
-subtitle: '“下周上线”'
-description: '拒绝落入无限内耗的陷阱, 不要停下反思革新的步伐'
-keywords:
-author: NSFish
+# title:  
+# subtitle:  
+# description:  
+# keywords:
+# author: 陈焕杰
 language: zh-cn
 timezone: 'Asia/Shanghai'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: http://chenhuanjie.github.io
+url: https://chenhuanjie.github.io
 root: /
-permalink: :year:month:day/:title/
+permalink: :title/
 permalink_defaults:
 pretty_urls:
   trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
@@ -121,7 +121,7 @@ jsonContent:
     updated: false
     comments: false
     link: false
-    permalink: true
+    permalink: false
     excerpt: false
     categories: true
-    tags: true
+    tags: false

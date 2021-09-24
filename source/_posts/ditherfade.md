@@ -1,5 +1,7 @@
 ---
 title: Dither Fade效果学习
+date: 2021-01-11 10:27:45
+categories: shader
 ---
 
 前几天看了Dithering相关的一些内容, 没有深入了解, 但是感觉值得记录一下.

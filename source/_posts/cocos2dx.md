@@ -1,5 +1,7 @@
 ---
-title: Cocos2dx 4.x 项目工程构建
+title: Cocos2d-x 4.x 项目工程构建
+date: 2020-11-27 20:43:11
+categories: cocos
 ---
 
 Cocos2dx从4.0版本开始改用cmake, 删掉了原有的各个平台的工程文件, 但是没关系, 为了愉快地使用IDE进行编译, 可以使用cmake来构建工程文件供IDE使用.

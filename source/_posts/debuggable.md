@@ -1,5 +1,6 @@
 ---
-title: 尝试改AndroidManifest并添加Debuggable
+title: apk修改debuggable
+date: 2020-11-26 18:08:12
 ---
 
 最近想玩下RenderDoc, 用Mac版的软件自动patch debuggable时不知为何失败了, 于是想问强哥要个debug包, 未遂. 强哥表示我可以自力更生, 倒也没错就是了(悲). 思路大致有这么三个:

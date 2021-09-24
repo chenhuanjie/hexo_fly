@@ -1,59 +1,24 @@
 # ========== Profile ========== #
-# avatar
-avatar: /avatar/Misaka03.png
-# author name
-author: NSFish
-# signature
-signature: '哗, 今天又摸了'
-# SNS (you can custom the order)
+avatar: /avatar/bluered.png
+author: 陈焕杰
 social:
-  email: 934507859@qq.com
-  # github: //github.com/chenhuanjie
-  # wechat and qq should be a path of qr-code image
-  # wechat: /assets/example_qr.png
-  qq: 
-  telegram: 
-  weibo: 
-  zhihu: 
-  douban: 
-  facebook: 
-  twitter: 
-  instagram: 
-  stack-overflow: 
-  segmentFault: 
-  juejin: 
-  v2ex: 
-  bilibili: 
-  linkedin: 
-  steam: 
-  others: 
-  rss: 
-# friends
+  email: chenhuanjie1998@gmail.com
+  qq: /assets/qq_qrcode.png
 friends:
   小马哥: http://120.27.147.205
   强哥: https://www.huwenqiang.cn
-  # friendC: 
 about:
-  enable: true
+  enable: false
   image: '/intro/about-bg.jpg'
 
 # ========== Site ========== #
-# title of the site (good for SEO)
-SEO_title: 短尾猫集散地
-# keywords for site (good for SEO)
-SEO_keywords:
-  - nsfish
-  - 短尾猫集散地
-  - 博客
-# main title shown in header image
-main_title: “下周上线”
-# subtitle
-subtitle: 拒绝落入无限内耗的陷阱, 不要停下反思革新的步伐
-# site haeder image
+# SEO_title: 焕杰的博客
+# SEO_keywords:
+#  - seo keywords
+main_title: 焕杰的博客
+subtitle:  
 site_header_image: '/intro/index-bg.jpg'
-# post haeder image
-post_header_image: '/intro/post-bg.jpg'
-# 404 image
+post_header_image: '/intro/post-bg.png'
 _404_image: '/intro/404-bg.jpg'
 
 # ========== Search ========== #
@@ -116,14 +81,14 @@ CNZZ_analytics:
 favicon: /assets/plane.ico
 # truncate length of abstracts in index page (the default is 300, there will be no abstruct if you input 0)
 truncate_length: 
-# enable toc
-toc: true
+# enable toc (table of content, a.k.a. Content Log)
+toc: false
 # word count & reading time
 reading_info: true
 # intro height (the default is 50 percents of the screen, you can input other number)
-index_intro_height: 50
-post_intro_height: 50
-about_intro_height: 50
+index_intro_height: 20
+post_intro_height: 20
+about_intro_height: 20
 # copyright
 copyright:
   enable: true
