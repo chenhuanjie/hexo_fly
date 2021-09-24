@@ -52,7 +52,7 @@ highlight:
   wrap: true
   hljs: false
 prismjs:
-  enable: true
+  enable: false
   preprocess: true
   line_number: true
   tab_replace: ''
@@ -125,3 +125,7 @@ jsonContent:
     excerpt: false
     categories: true
     tags: false
+
+pandoc:
+  extensions:
+    - '-implicit_figures'
