@@ -123,14 +123,18 @@ setupInput();
 // 接下来是canvas相关
 var canvas = document.getElementById('mainCanvas');
 var gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+gl.getExtension('OES_standard_derivatives');
+// gl.getExtension('GL_EXT_gpu_shader4');  // supported above version 300 es
 var baseTime = new Date().getTime();
 var currentProgram;
 var surface = {};
 function setErrorMsg(msg) {
+    if (msg) {
+        msg = msg.substr(0, msg.length - 1);  // remove trailing '\x00'
+        console.log('Error: ' + msg);
+    }
     var label = document.getElementById('errorLabel');
     label.textContent = msg;
-    if (msg)
-        console.log('Error: ' + msg);
 }
 function createShader(src, type) {
     var shader = gl.createShader(type);
