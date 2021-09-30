@@ -118,7 +118,7 @@ try {
 } catch (error) {}
 if (!gl) {
     var msg = '当前浏览器不支持WebGL2, 仅显示代码.'
-    canvas.style.minHeight = canvas.style.height = '0';
+    canvas.style.display = 'none';
     setErrorMsg(msg);
     throw new Error(msg);
 }
@@ -134,12 +134,10 @@ function setErrorMsg(msg) {
     var label = document.getElementById('errorLabel');
     if (msg) {
         msg = msg.substr(0, msg.length - 1);  // remove trailing '\x00'
-        console.log('ErrorMsg = ' + msg);
         label.style.color = 'red';
     }
     else {
         msg = 'Successfully compiled shader program';
-        console.log(msg);
         label.style.color = 'lightgreen';
     }
     label.textContent = msg;
@@ -170,6 +168,7 @@ function compileProgram(src) {
         setErrorMsg(gl.getProgramInfoLog(program));
         return;
     }
+    console.log('Successfully compiled shader program');
     if (currentProgram)
         gl.deleteProgram(currentProgram);
     currentProgram = program;
